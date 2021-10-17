@@ -28,6 +28,7 @@ class ContainerTest {
             co.addMember(b);
             co.addMember(c);
             co.addMember(d);
+            co.addMember(null);
         } catch (ContainerException e){
             Assertions.assertEquals("Das Member-Objekt mit der ID 10 ist bereits vorhanden!",e.getMessage());
         }
