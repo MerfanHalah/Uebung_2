@@ -32,6 +32,7 @@ class ContainerTest {
         } catch (ContainerException e){
             Assertions.assertEquals("Das Member-Objekt mit der ID 10 ist bereits vorhanden!",e.getMessage());
         }
+        assertEquals(3,co.size());
 
     }
 
