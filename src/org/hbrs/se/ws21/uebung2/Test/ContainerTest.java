@@ -41,6 +41,7 @@ class ContainerTest {
 
         assertEquals("Das Member-Objekt mit der ID 10 wurde gelöscht", co.deleteMember(10));
         assertEquals("Das Member-Objekt mit der ID 50 ist nicht verfuegbar", co.deleteMember(50));
+        assertEquals(2,co.size());
 
     }
 
